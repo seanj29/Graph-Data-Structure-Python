@@ -7,59 +7,50 @@
 </p>
 
 
+
+
+
 ## Table of contents
 
 - [Quick start](#quick-start)
-- [Status](#status)
 - [What's included](#whats-included)
 - [Bugs and feature requests](#bugs-and-feature-requests)
-- [Contributing](#contributing)
 - [Creators](#creators)
 - [Thanks](#thanks)
 - [Copyright and license](#copyright-and-license)
 
 
+## Quick start
 
+If you just want a short demo of a Dijkstra, run the main.py file using python 3.12 or higher
 
 ## What's included
 
 Basic Implementation of a class based bi-directional Graph. Feel free to fork and use as you please
 
 ```text
-folder1/
-└── folder2/
-    ├── folder3/
-    │   ├── file1
-    │   └── file2
-    └── folder4/
-        ├── file3
-        └── file4
+root/
+    └── Dijikstra.py
+    ├── Graph.py
+    ├── Readme.md
+    └── main.py
 ```
 
 ## Bugs and feature requests
 
-Have a bug or a feature request? Please first read the [issue guidelines](https://reponame/blob/master/CONTRIBUTING.md) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://reponame/issues/new).
-
-## Contributing
-
-Please read through our [contributing guidelines](https://reponame/blob/master/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
-
-Moreover, all HTML and CSS should conform to the [Code Guide](https://github.com/mdo/code-guide), maintained by [Main author](https://github.com/usernamemainauthor).
-
-Editor preferences are available in the [editor config](https://reponame/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <https://editorconfig.org/>.
+Have a bug or a feature request? Feel free to [open a new issue](https://github.com/seanj29/Graph-Data-Structure-Python/issues/new).
 
 ## Creators
 
-**Creator 1**
 
-- <https://github.com/usernamecreator1>
+- <https://github.com/seanj29>
 
 ## Thanks
 
-Some Text
+[Ismaestro](https://github.com/Ismaestro) for the amazing Markdown documentation template
 
 ## Copyright and license
 
-Code and documentation copyright 2011-2018 the authors. Code released under the [MIT License](https://reponame/blob/master/LICENSE).
+Code and documentation copyright 2023 the Sean Otto. Code released under the [GNU General Public License v3.0](https://github.com/seanj29/Graph-Data-Structure-Python/blob/master/LICENSE).
 
 Enjoy :metal:
