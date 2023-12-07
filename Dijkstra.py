@@ -30,9 +30,9 @@ class Dijkstra:
 
             neighbours = graph.getNeighhbours(currentMinNode)
             for neighbor in neighbours:
-                tempValue = shortestPath[currentMinNode] + graph.getEdgeValue(currentMinNode, neighbor)
-                if tempValue < shortestPath[neighbor]:
-                    shortestPath[neighbor] = tempValue
+                cost = shortestPath[currentMinNode] + graph.getEdgeValue(currentMinNode, neighbor)
+                if cost < shortestPath[neighbor]:
+                    shortestPath[neighbor] = cost
                     # Update the best path to the curent node
                     previousNodes[neighbor] = currentMinNode
             # After visiting its neighbors, we mark the node as "visited"
