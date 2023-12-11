@@ -88,9 +88,10 @@ class Graph:
                 neighbours.append(node)
         return neighbours
     
-    def addNode(self, Node: Node) -> Node:
-        self.nodeList.append(Node)
-        return Node
+    def addNode(self, data: any) -> Node:
+        newNode = Node(data)
+        self.nodeList.append(newNode)
+        return newNode
 
     def removeNode(self, Node: Node) -> Node:
         
@@ -102,7 +103,10 @@ class Graph:
                 
         return Node
     
-    def addEdge(self, Node1: Node, Node2: Node, value) -> Edge:
+    def addEdge(self, Node1Data: any, Node2Data: any, value: any) -> Edge:
+        
+        Node1 = self.getNodeByValue(Node1Data)
+        Node2 = self.getNodeByValue(Node2Data)   
         
         Edgetemp = Edge(Node1, Node2, value)        
         if self.isAdjacentTo(Node1, Node2) == False:
@@ -137,6 +141,12 @@ class Graph:
             
     def getNodeValue(self, Node: Node):
         return Node.data
+    
+    def getNodeByValue(self, data: any) -> Node:
+         for node in self.nodeList:
+             if node.data == data:
+                 return node
+         
     def setNodeValue(self, Node: Node, value) -> Node:
         
         Node.data = value
